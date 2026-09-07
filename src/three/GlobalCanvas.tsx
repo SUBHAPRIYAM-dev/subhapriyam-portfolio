@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { DeveloperCore } from "./DeveloperCore";
 import { CameraRig } from "./CameraRig";
+import { TechBackgroundIcons } from "./TechBackgroundIcons";
 import { useReducedMotion } from "../hooks/useReducedMotion";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 
@@ -62,6 +63,7 @@ export function GlobalCanvas({ scrollProgress }: GlobalCanvasProps) {
         <pointLight position={[0, 0, 3]} intensity={0.8} color="#0284c7" />
 
         <DeveloperCore scrollProgress={scrollProgress} pointer={pointer} />
+        <TechBackgroundIcons scrollProgress={scrollProgress} />
         <CameraRig scrollProgress={scrollProgress} />
       </Canvas>
     </div>
