@@ -13,20 +13,20 @@ export function Hero() {
     >
       {/* Floating HUD Technical Badges - Desktop */}
       <div className="absolute inset-0 pointer-events-none hidden lg:block">
-        <div className="absolute top-1/4 left-8 glass-panel px-3 py-1.5 rounded-full border border-cyan-500/20 text-[11px] font-mono text-cyan-300 flex items-center gap-2 animate-bounce-slow">
+        <div className="absolute top-1/4 left-6 glass-panel px-3 py-1.5 rounded-full border border-cyan-500/20 text-[11px] font-mono text-cyan-300 flex items-center gap-2 animate-bounce-slow">
           <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
           SYS_STATUS: ONLINE
         </div>
-        <div className="absolute bottom-1/4 right-8 glass-panel px-3 py-1.5 rounded-full border border-indigo-500/20 text-[11px] font-mono text-indigo-300 flex items-center gap-2">
+        <div className="absolute bottom-1/4 right-6 glass-panel px-3 py-1.5 rounded-full border border-indigo-500/20 text-[11px] font-mono text-indigo-300 flex items-center gap-2">
           <Terminal size={12} />
           ENV: PRODUCTION
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto w-full z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
           {/* Left Column: Kinetic Typography & Copy */}
-          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
+          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left min-w-0">
             {/* Top Tag Badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full glass-panel border border-white/10 mb-6 max-w-full">
               <Sparkles size={14} className="text-cyan-400 shrink-0" />
@@ -35,25 +35,25 @@ export function Hero() {
               </span>
             </div>
 
-            {/* Hero Name */}
-            <h1 className="font-display text-4xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight text-white uppercase leading-none mb-3 drop-shadow-2xl max-w-full break-words">
+            {/* Single Line Name Headline - Guaranteed no text split */}
+            <h1 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-white uppercase leading-none mb-3 drop-shadow-2xl whitespace-nowrap">
               <span className="bg-gradient-to-r from-white via-gray-100 to-gray-400 bg-clip-text text-transparent">
                 {personalData.name.split(" ")[0]}
               </span>
             </h1>
 
             {/* Role Subtitle */}
-            <div className="font-display text-xl sm:text-3xl lg:text-4xl font-bold tracking-widest text-cyan-400 uppercase mb-6">
+            <div className="font-display text-lg sm:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-wider text-cyan-400 uppercase mb-6 whitespace-nowrap">
               {personalData.role}
             </div>
 
-            {/* Headline */}
-            <p className="max-w-xl text-sm sm:text-lg text-gray-300 font-light leading-relaxed mb-8 px-2 lg:px-0">
+            {/* Headline Description */}
+            <p className="max-w-xl text-sm sm:text-base lg:text-lg text-gray-300 font-light leading-relaxed mb-8 px-2 lg:px-0">
               {personalData.headline}
             </p>
 
             {/* Floating Tech Badges */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-2.5 max-w-xl mb-10">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-2.5 max-w-xl mb-8">
               {techBadges.map((badge) => (
                 <span
                   key={badge}
@@ -67,7 +67,7 @@ export function Hero() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-8">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-4">
               <a
                 href="#projects"
                 onClick={() => soundManager.playClick()}
@@ -90,8 +90,8 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right Column: Gen Z 3D Interactive Portrait */}
-          <div className="lg:col-span-5 flex justify-center w-full">
+          {/* Right Column: 3D Cyberpunk Holographic Portrait */}
+          <div className="lg:col-span-5 flex justify-center w-full mt-6 lg:mt-0">
             <HeroPortrait
               imageSrc={personalData.avatarUrl}
               name={personalData.name}
@@ -100,7 +100,7 @@ export function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-10">
           <a
             href="#about"
             onClick={() => soundManager.playClick()}
