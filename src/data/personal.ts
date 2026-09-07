@@ -28,7 +28,7 @@ export const personalData: PersonalInfo = {
   github: "https://github.com/SUBHAPRIYAM-dev",
   linkedin: "https://linkedin.com/in/subhapriyam",
   resumeUrl: "#",
-  avatarUrl: "/images/profile/subhapriyam.jpg",
+  avatarUrl: "/images/profile/subhapriyam-cutout.png",
   capabilities: [
     "FRONTEND ARCHITECTURE",
     "BACKEND APIS",

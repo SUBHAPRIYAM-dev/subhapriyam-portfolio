@@ -29,12 +29,12 @@ export function About() {
         {/* Profile Feature Card */}
         <div className="glass-panel p-6 sm:p-10 rounded-3xl border border-cyan-500/20 mb-16 relative overflow-hidden">
           <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* Avatar Circle Frame */}
-            <div className="relative shrink-0 w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-2 border-cyan-400/50 p-1 shadow-[0_0_20px_rgba(56,189,248,0.25)]">
+            {/* Transparent Cutout Circle Frame */}
+            <div className="relative shrink-0 w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden border-2 border-cyan-400/50 p-1 bg-cyan-950/20 shadow-[0_0_30px_rgba(56,189,248,0.3)] flex items-end justify-center">
               <img
                 src={personalData.avatarUrl}
                 alt={personalData.name}
-                className="w-full h-full object-cover object-center rounded-xl filter contrast-105"
+                className="w-full h-full object-contain object-bottom filter contrast-105"
               />
               <span className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-emerald-400 border-2 border-black animate-pulse" />
             </div>
