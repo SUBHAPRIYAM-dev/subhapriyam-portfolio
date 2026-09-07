@@ -37,10 +37,10 @@ export const projectsData: Project[] = [
       "Optimized client state using custom React hooks"
     ],
     architectureOverview: "Client (React + Vite) → Express REST API Server → MySQL Relational Database. Designed with clean MVC separation and token-based state management.",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/SUBHAPRIYAM-dev",
     liveUrl: "https://example.com",
     featured: true,
-    accentColor: "#38bdf8" // Cyan
+    accentColor: "#38bdf8"
   },
   {
     id: "movie-picture-pipeline",
@@ -63,10 +63,10 @@ export const projectsData: Project[] = [
       "Scalable Kubernetes Deployments with Auto-Scaling & Load Balancing"
     ],
     architectureOverview: "GitHub Actions CI/CD → Docker Image Build → Amazon ECR Registry → AWS EKS Kubernetes Cluster with React + TS Monitoring UI.",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/SUBHAPRIYAM-dev",
     liveUrl: "https://example.com",
     featured: true,
-    accentColor: "#a855f7" // Purple
+    accentColor: "#a855f7"
   },
   {
     id: "attendance-management-system",
@@ -89,10 +89,10 @@ export const projectsData: Project[] = [
       "Responsive QR scanner interface compatible with mobile cameras"
     ],
     architectureOverview: "React Mobile/Desktop Client → Spring Boot REST API → Hibernate JPA Layer → MySQL Database. Integrated with real-time QR generation & decode libraries.",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/SUBHAPRIYAM-dev",
     liveUrl: "https://example.com",
     featured: true,
-    accentColor: "#34d399" // Emerald
+    accentColor: "#34d399"
   },
   {
     id: "student-lms",
@@ -115,9 +115,9 @@ export const projectsData: Project[] = [
       "Secure file upload pipeline & data validation"
     ],
     architectureOverview: "React SPA UI → Node.js/Express Backend Services → MySQL Storage. Features file storage management and token-authenticated session control.",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/SUBHAPRIYAM-dev",
     liveUrl: "https://example.com",
     featured: true,
-    accentColor: "#f43f5e" // Rose
+    accentColor: "#f43f5e"
   }
 ];

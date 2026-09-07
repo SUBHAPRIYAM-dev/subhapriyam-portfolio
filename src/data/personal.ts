@@ -9,6 +9,7 @@ export interface PersonalInfo {
   github: string;
   linkedin: string;
   resumeUrl: string;
+  avatarUrl: string;
   capabilities: string[];
   philosophies: {
     title: string;
@@ -23,10 +24,11 @@ export const personalData: PersonalInfo = {
   bio: "Full Stack Developer specializing in modern frontend architecture, robust backend APIs, database design, and cloud infrastructure deployment.",
   aboutStatement: "From interface to infrastructure, I build applications that are designed to work in the real world.",
   location: "India",
-  email: "subhapriyamdash@example.com", // Configurable email field
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  email: "subhapriyamdash@example.com",
+  github: "https://github.com/SUBHAPRIYAM-dev",
+  linkedin: "https://linkedin.com/in/subhapriyam",
   resumeUrl: "#",
+  avatarUrl: "/images/profile/subhapriyam.jpg",
   capabilities: [
     "FRONTEND ARCHITECTURE",
     "BACKEND APIS",
